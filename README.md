@@ -19,7 +19,11 @@ It reproduces the entire R Markdown pipeline: principal‑component analysis (P
 └── README.md                          # You are here
 ```
 
-> **Note:** CSVs are not included in the repo. Place them in the project root or adjust the paths in the script.
+> ## Main Dataset
+The dataset is too large to upload to GitHub.  
+You can download it here: [Download dataset](https://drive.google.com/file/d/1S-j4hxxQO96_JRGX5DBZW0GlsWb0dcWJ/view?usp=sharing)
+
+After downloading, place the dataset in the same folder as the script before running.
 
 ---
 
