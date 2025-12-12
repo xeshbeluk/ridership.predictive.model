@@ -96,28 +96,3 @@ The script prints:
 It also shows two plots (scree plot & ROC curve).
 
 ---
-
-## Interpreting the Output
-
-* **Coefficients** with positive signs indicate predictors associated with **higher odds** of *low* ridership (after controlling for other factors).  
-* **AUC ≥ 0.7** generally indicates acceptable discrimination.  
-* **Clustering** helps control for spatial heterogeneity before modeling.
-
----
-
-## Re‑using the Model
-
-You can export the fitted model at the bottom of `predictive_model_full.py`:
-
-```python
-import pickle
-with open('logit_model.pkl', 'wb') as f:
-    pickle.dump(logit_model, f)
-```
-
-Load later with:
-
-```python
-with open('logit_model.pkl', 'rb') as f:
-    model = pickle.load(f)
-```
